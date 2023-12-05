@@ -1,0 +1,9 @@
+install.packages("ggplot2")
+iris
+data=iris
+library(ggplot2)
+ggplot(data,aes(1:150,Sepal.Length))+geom_line()
+ggplot(data,aes(x=Sepal.Length,y=Sepal.Width))+geom_point()
+ggplot(data,aes(x=Species,y=Sepal.Length))+geom_col()
+ggplot(data,aes(Sepal.Length))+geom_histogram()
+ggplot(data,aes(x=Sepal.Length))+geom_boxplot()
